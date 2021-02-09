@@ -1,0 +1,19 @@
+<div class="form-group">
+  <label for="title">Titulo</label>
+  <input required value= "<%= article.title %>" type="text" name="title" id="title" class="form-control" aria-describedby="helpId">
+  <small id="helpId" class="text-muted">Titulo del articulo</small>
+</div>
+
+<div class="form-group">
+    <label for="description">Descripción</label>
+    <textarea name="description" id="description" class="form-control" aria-describedby="helpId"><%= article.description %></textarea>
+    <small id="helpId" class="text-muted">Descripción del articulo</small>
+</div>
+<div class="form-group">
+  <label for="markdown">Artículo</label>
+  <textarea required name="markdown" id="markdown" class="form-control" aria-describedby="helpId"><%= article.markdown %></textarea>
+  <small id="helpId" class="text-muted">Artículo, puede usar markdown</small>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancelar</a>
+<button type="submit" class="btn btn-primary">Guardar</button>
